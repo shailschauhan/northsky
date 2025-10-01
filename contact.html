@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact • NORTHSKY</title>
+  <style>
+:root{
+  --bg:#f7fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+  --brand:#5b8def; --brand2:#9ae6b4; --accent:#fde68a;
+  --border:#e5e7eb; --shadow:0 10px 24px rgba(15,23,42,.06),0 2px 6px rgba(15,23,42,.05)
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 400px at -10% -10%, #e0f2fe55, transparent 60%),
+    radial-gradient(1000px 400px at 120% -10%, #fef3c755, transparent 60%),
+    linear-gradient(180deg,#ffffff,var(--bg))
+}
+a{text-decoration:none;color:#1e4ed8}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(6px);
+  border-bottom:1px solid var(--border)}
+.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-badge{width:44px;height:44px;border-radius:12px;
+  background:conic-gradient(from 180deg, var(--brand), var(--brand2), #fbcfe8, var(--brand));
+  display:grid;place-items:center;color:#fff;font-weight:900}
+.wordmark{font-weight:900;letter-spacing:2px}
+nav.primary{display:flex;gap:10px;flex-wrap:wrap}
+nav.primary a{padding:10px 12px;border-radius:10px;color:var(--text);font-weight:700}
+nav.primary .active{background:#f1f5f9;color:#075985}
+.actions{display:flex;gap:8px;align-items:center}
+.btn{height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+.btn.brand{border:none;background:linear-gradient(90deg,var(--brand),#67e8f9);color:#0b1020}
+.btn.ghost{background:#f8fafc}
+.section{padding:56px 0}
+.hero{background:linear-gradient(180deg,#ffffffaa,#f8fafc);}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:32px 0}
+h1{font-size:44px;line-height:1.08;margin:0 0 8px}
+h2{margin:0 0 8px}
+.lead{font-size:18px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.figure{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.figure img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(105%) contrast(102%)}
+.table{width:100%;border-collapse:separate;border-spacing:0}
+.table th,.table td{padding:12px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.input{display:flex;flex-direction:column;gap:6px}
+.input input,.input textarea,.input select{border:1px solid var(--border);border-radius:12px;padding:12px;background:#fff}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .full{grid-column:1/-1}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#e0f2fe;color:#075985;font-weight:800;font-size:12px}
+.note{background:#ecfeff;border:1px solid #bae6fd;padding:12px;border-radius:12px}
+footer{border-top:1px solid var(--border);background:#fff;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:16px;padding:24px 0}
+@media(max-width:980px){.grid4,.grid3,.grid2,.form{grid-template-columns:1fr}.hero .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  
+<header class="top">
+  <div class="container">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="NORTHSKY Home">
+        <div class="brand-badge">N</div>
+        <div>
+          <div class="wordmark">NORTHSKY</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:-2px">Automation • Digitization • Intelligence</div>
+        </div>
+      </a>
+      <nav class="primary" aria-label="Primary"><a href='index.html' class=''>Home</a><a href='about.html' class=''>About</a><a href='services.html' class=''>Services</a><a href='industries.html' class=''>Industries</a><a href='testimonials.html' class=''>Testimonials</a><a href='contact.html' class='active'>Contact</a></nav>
+      <div class="actions">
+        <button class="btn ghost">Sign in</button>
+        <button class="btn brand">Sign up</button>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<main>
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="badge">Contact</span>
+        <h1>Let’s talk about your automation goals.</h1>
+        <p class="lead">Share your objectives, timeline, and tools. Our experts respond within one business day.</p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <a class="btn brand" href="#form">Book a discovery call</a>
+          <a class="btn ghost" href="services.html">Explore services</a>
+        </div>
+      </div>
+      <div class="figure" style="min-height:320px">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1600&auto=format&fit=crop" alt="Bright, friendly office reception"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="form" style="background:#fff">
+    <div class="container">
+      <h2>Contact us</h2>
+      <form class="form card" id="contactForm">
+        <div class="input"><label>First name</label><input name="first" required placeholder="Jane"/></div>
+        <div class="input"><label>Last name</label><input name="last" required placeholder="Doe"/></div>
+        <div class="input"><label>Work email</label><input name="email" type="email" required placeholder="jane@company.com"/></div>
+        <div class="input"><label>Phone</label><input name="phone" type="tel" placeholder="+91 98xxxxxxx"/></div>
+        <div class="input"><label>Industry</label>
+          <select name="industry">
+            <option>Hospitals</option>
+            <option>Hotels</option>
+            <option>Manufacturing</option>
+            <option>Retail</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="input full"><label>How can we help?</label><textarea name="message" rows="5" placeholder="Describe your objectives, timeline, and current tools..."></textarea></div>
+        <div class="full"><button class="btn brand">Submit</button></div>
+      </form>
+      <p class="note" style="margin-top:10px">We’ll keep your data private and never share it with third parties.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid2" style="align-items:center">
+        <div class="card">
+          <h3>SLA & Support</h3>
+          <table class="table"><tbody>
+            <tr><td>Uptime</td><td>99.95%</td></tr>
+            <tr><td>P1 response</td><td>&lt; 15 minutes</td></tr>
+            <tr><td>Channels</td><td>Email, Slack Connect, PagerDuty</td></tr>
+          </tbody></table>
+        </div>
+        <div class="figure" style="max-height:260px"><img src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1600&auto=format&fit=crop" alt="Support team at work"/></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2>Offices</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card"><h3>Pune, IN</h3><p>North Main Road, Koregaon Park<br/>Pune, MH 411001</p></div>
+        <div class="card"><h3>Bengaluru, IN</h3><p>Outer Ring Road, ORR<br/>Bengaluru, KA 560103</p></div>
+        <div class="card"><h3>Remote‑first</h3><p>We work across timezones to support customers worldwide.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+           background:linear-gradient(90deg,#e0f2fe,#fef9c3)">
+        <p class="lead" style="margin:0">Prefer email? Write to <strong>hello@northsky.example</strong> and we’ll get back quickly.</p>
+        <div style="display:flex;gap:10px">
+          <a class="btn brand" href="#form">Book a call</a>
+          <a class="btn ghost" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="wordmark">NORTHSKY</div>
+      <p class="lead">Automation & digitization for hospitals, hotels, manufacturing, and retail — with domain blueprints and human‑friendly AI.</p>
+    </div>
+    <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+    <div><h4>Solutions</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="industries.html#hospitals">Smart Hospitals</a></li><li><a href="industries.html#hotels">Smart Hotels</a></li><li><a href="industries.html#manufacturing">Manufacturing 4.0</a></li><li><a href="industries.html#retail">Connected Retail</a></li></ul></div>
+    <div><h4>Resources</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="#">Docs</a></li><li><a href="#">Security</a></li><li><a href="#">Status</a></li></ul></div>
+  </div>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:var(--muted);font-size:13px">
+    <div>© 2025 NORTHSKY. All rights reserved.</div>
+    <div>Made with ❤️ in India</div>
+  </div>
+</footer>
+
+  <script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(this).entries());
+  const msg = `Thanks, ${data.first}! We'll reach out at ${data.email} within one business day.`;
+  alert(msg);
+  this.reset();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+</script>
+</body>
+</html>

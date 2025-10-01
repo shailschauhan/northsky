@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About • NORTHSKY</title>
+  <style>
+:root{
+  --bg:#f7fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+  --brand:#5b8def; --brand2:#9ae6b4; --accent:#fde68a;
+  --border:#e5e7eb; --shadow:0 10px 24px rgba(15,23,42,.06),0 2px 6px rgba(15,23,42,.05)
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 400px at -10% -10%, #e0f2fe55, transparent 60%),
+    radial-gradient(1000px 400px at 120% -10%, #fef3c755, transparent 60%),
+    linear-gradient(180deg,#ffffff,var(--bg))
+}
+a{text-decoration:none;color:#1e4ed8}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(6px);
+  border-bottom:1px solid var(--border)}
+.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-badge{width:44px;height:44px;border-radius:12px;
+  background:conic-gradient(from 180deg, var(--brand), var(--brand2), #fbcfe8, var(--brand));
+  display:grid;place-items:center;color:#fff;font-weight:900}
+.wordmark{font-weight:900;letter-spacing:2px}
+nav.primary{display:flex;gap:10px;flex-wrap:wrap}
+nav.primary a{padding:10px 12px;border-radius:10px;color:var(--text);font-weight:700}
+nav.primary .active{background:#f1f5f9;color:#075985}
+.actions{display:flex;gap:8px;align-items:center}
+.btn{height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+.btn.brand{border:none;background:linear-gradient(90deg,var(--brand),#67e8f9);color:#0b1020}
+.btn.ghost{background:#f8fafc}
+.section{padding:56px 0}
+.hero{background:linear-gradient(180deg,#ffffffaa,#f8fafc);}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:32px 0}
+h1{font-size:44px;line-height:1.08;margin:0 0 8px}
+h2{margin:0 0 8px}
+.lead{font-size:18px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.figure{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.figure img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(105%) contrast(102%)}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#e0f2fe;color:#075985;font-weight:800;font-size:12px}
+.kpi{display:flex;align-items:center;gap:8px}
+.kpi .num{font-size:28px;font-weight:900}
+.table{width:100%;border-collapse:separate;border-spacing:0}
+.table th,.table td{padding:12px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.note{background:#ecfeff;border:1px solid #bae6fd;padding:12px;border-radius:12px}
+.pill{background:#fff7ed;border:1px solid #fed7aa;padding:6px 10px;border-radius:999px;font-weight:700;color:#9a3412}
+.timeline{border-left:3px solid var(--border);padding-left:14px}
+.timeline .t{margin:10px 0}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+footer{border-top:1px solid var(--border);background:#fff;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:16px;padding:24px 0}
+@media(max-width:980px){.grid4,.grid3,.grid2,.values{grid-template-columns:1fr}.hero .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  
+<header class="top">
+  <div class="container">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="NORTHSKY Home">
+        <div class="brand-badge">N</div>
+        <div>
+          <div class="wordmark">NORTHSKY</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:-2px">Automation • Digitization • Intelligence</div>
+        </div>
+      </a>
+      <nav class="primary" aria-label="Primary"><a href='index.html' class=''>Home</a><a href='about.html' class='active'>About</a><a href='services.html' class=''>Services</a><a href='industries.html' class=''>Industries</a><a href='testimonials.html' class=''>Testimonials</a><a href='contact.html' class=''>Contact</a></nav>
+      <div class="actions">
+        <button class="btn ghost">Sign in</button>
+        <button class="btn brand">Sign up</button>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<main>
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="badge">About</span>
+        <h1>We build automation that feels human and ships fast.</h1>
+        <p class="lead">NORTHSKY helps operations teams digitize real‑world workflows with domain blueprints, secure integrations, and AI copilots — measurable outcomes in weeks.</p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <a class="btn brand" href="services.html">See our services</a>
+          <a class="btn ghost" href="#methodology">Implementation timeline</a>
+        </div>
+      </div>
+      <div class="figure" style="min-height:320px">
+        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1600&auto=format&fit=crop" alt="Friendly team collaborating"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2>Mission, Approach, Promise</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card"><h3>Mission</h3><p>Accelerate the world’s operations with secure, intelligent automation that lets people focus on meaningful work.</p></div>
+        <div class="card"><h3>Approach</h3><p>Blueprints not blank slates: role‑based UIs, validations, approvals, and analytics ready‑to‑run — then tailored to you.</p></div>
+        <div class="card"><h3>Promise</h3><p>Transparent delivery, strict data governance, and tangible ROI in weeks, not months.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="methodology">
+    <div class="container">
+      <div class="grid2" style="align-items:center">
+        <div>
+          <h2>Methodology</h2>
+          <div class="timeline" style="margin-top:12px">
+            <div class="t"><strong>Week 1 — Discover:</strong> goals, KPI alignment, access & security setup.</div>
+            <div class="t"><strong>Weeks 2–3 — Design:</strong> prototype flows, data mapping, quick wins live.</div>
+            <div class="t"><strong>Weeks 4–6 — Deliver:</strong> integrations, training, change management.</div>
+            <div class="t"><strong>Week 8 — Drive:</strong> value review, scale plan, SLOs signed.</div>
+          </div>
+          <p class="note" style="margin-top:12px">We co‑own outcomes with you and review progress weekly against agreed KPIs.</p>
+        </div>
+        <div class="figure">
+          <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0f8?q=80&w=1600&auto=format&fit=crop" alt="Workshop with sticky notes and planning"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2>Security & Compliance</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card"><h3>Identity & Access</h3><p>SSO/SAML, SCIM, RBAC, least‑privilege, session policies.</p></div>
+        <div class="card"><h3>Data Protection</h3><p>Encryption in transit/at rest, field‑level controls, masking, DLP.</p></div>
+        <div class="card"><h3>Audit & Governance</h3><p>Immutable logs, version history, approvals with e‑sign, retention policies.</p></div>
+      </div>
+      <div class="figure" style="margin-top:12px;max-height:280px">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop" alt="Secure modern workspace"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Our values</h2>
+      <div class="values" style="margin-top:12px">
+        <div class="card"><h3>Own outcomes</h3><p>We measure what matters and iterate quickly.</p></div>
+        <div class="card"><h3>Design for clarity</h3><p>Simple, human‑friendly workflows beat complex manuals.</p></div>
+        <div class="card"><h3>Secure by default</h3><p>Privacy, governance, and auditability at every layer.</p></div>
+      </div>
+      <div class="figure" style="margin-top:12px;max-height:260px">
+        <img src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=1600&auto=format&fit=crop" alt="Calm landscape representing values"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2>Leadership</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <h3 style="margin-top:0">Shailendra Kumar</h3>
+          <div class="lead">Founder & CEO</div>
+          <p>Ex‑Ops leader; scaled automation programs across healthcare & hospitality.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Ananya Patel</h3>
+          <div class="lead">Head of Delivery</div>
+          <p>Program management, change leadership, and measurable outcomes.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Ravi Menon</h3>
+          <div class="lead">VP Engineering</div>
+          <p>Secure platforms, integrations, and data‑first architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Ready to partner?</h2>
+      <div class="card" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+           background:linear-gradient(90deg,#e0f2fe,#fef9c3)">
+        <p class="lead" style="margin:0">Book a discovery call — see a blueprint tailored to your KPIs and stack.</p>
+        <div style="display:flex;gap:10px">
+          <a class="btn brand" href="contact.html">Talk to an expert</a>
+          <a class="btn ghost" href="index.html">Back to Home</a>
+        </div>
+      </div>
+      <p style="margin-top:8px;color:var(--muted);font-size:12px">Images from Unsplash — free to use. Attribution appreciated.</p>
+    </div>
+  </section>
+</main>
+
+  
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="wordmark">NORTHSKY</div>
+      <p class="lead">Automation & digitization for hospitals, hotels, manufacturing, and retail — with domain blueprints and human‑friendly AI.</p>
+    </div>
+    <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+    <div><h4>Solutions</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="industries.html#hospitals">Smart Hospitals</a></li><li><a href="industries.html#hotels">Smart Hotels</a></li><li><a href="industries.html#manufacturing">Manufacturing 4.0</a></li><li><a href="industries.html#retail">Connected Retail</a></li></ul></div>
+    <div><h4>Resources</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="#">Docs</a></li><li><a href="#">Security</a></li><li><a href="#">Status</a></li></ul></div>
+  </div>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:var(--muted);font-size:13px">
+    <div>© 2025 NORTHSKY. All rights reserved.</div>
+    <div>Made with ❤️ in India</div>
+  </div>
+</footer>
+
+</body>
+</html>

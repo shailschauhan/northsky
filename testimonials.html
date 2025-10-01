@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Testimonials • NORTHSKY</title>
+  <style>
+:root{
+  --bg:#f7fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+  --brand:#5b8def; --brand2:#9ae6b4; --accent:#fde68a;
+  --border:#e5e7eb; --shadow:0 10px 24px rgba(15,23,42,.06),0 2px 6px rgba(15,23,42,.05)
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 400px at -10% -10%, #e0f2fe55, transparent 60%),
+    radial-gradient(1000px 400px at 120% -10%, #fef3c755, transparent 60%),
+    linear-gradient(180deg,#ffffff,var(--bg))
+}
+a{text-decoration:none;color:#1e4ed8}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(6px);
+  border-bottom:1px solid var(--border)}
+.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-badge{width:44px;height:44px;border-radius:12px;
+  background:conic-gradient(from 180deg, var(--brand), var(--brand2), #fbcfe8, var(--brand));
+  display:grid;place-items:center;color:#fff;font-weight:900}
+.wordmark{font-weight:900;letter-spacing:2px}
+nav.primary{display:flex;gap:10px;flex-wrap:wrap}
+nav.primary a{padding:10px 12px;border-radius:10px;color:var(--text);font-weight:700}
+nav.primary .active{background:#f1f5f9;color:#075985}
+.actions{display:flex;gap:8px;align-items:center}
+.btn{height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--border);background:#fff;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+.btn.brand{border:none;background:linear-gradient(90deg,var(--brand),#67e8f9);color:#0b1020}
+.btn.ghost{background:#f8fafc}
+.section{padding:56px 0}
+.hero{background:linear-gradient(180deg,#ffffffaa,#f8fafc);}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:32px 0}
+h1{font-size:44px;line-height:1.08;margin:0 0 8px}
+h2{margin:0 0 8px}
+.lead{font-size:18px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.figure{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.figure img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(105%) contrast(102%)}
+.table{width:100%;border-collapse:separate;border-spacing:0}
+.table th,.table td{padding:12px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;background:#e0f2fe;color:#075985;font-weight:800;font-size:12px}
+.quote{font-style:italic}
+.brands{border:1px solid var(--border);border-radius:16px;background:#fff;padding:12px}
+.brands img{width:100%;height:auto;display:block;filter:grayscale(100%)}
+footer{border-top:1px solid var(--border);background:#fff;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:2fr repeat(3,1fr);gap:16px;padding:24px 0}
+@media(max-width:980px){.grid4,.grid3,.grid2{grid-template-columns:1fr}.hero .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  
+<header class="top">
+  <div class="container">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="NORTHSKY Home">
+        <div class="brand-badge">N</div>
+        <div>
+          <div class="wordmark">NORTHSKY</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:-2px">Automation • Digitization • Intelligence</div>
+        </div>
+      </a>
+      <nav class="primary" aria-label="Primary"><a href='index.html' class=''>Home</a><a href='about.html' class=''>About</a><a href='services.html' class=''>Services</a><a href='industries.html' class=''>Industries</a><a href='testimonials.html' class='active'>Testimonials</a><a href='contact.html' class=''>Contact</a></nav>
+      <div class="actions">
+        <button class="btn ghost">Sign in</button>
+        <button class="btn brand">Sign up</button>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<main>
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="badge">Testimonials</span>
+        <h1>Real outcomes from teams who digitized with NORTHSKY.</h1>
+        <p class="lead">Hospitals, hotels, and enterprises use our blueprints and AI copilots to reduce delays, improve quality, and lift satisfaction.</p>
+        <div style="display:flex;gap:10px;margin-top:12px">
+          <a class="btn brand" href="services.html">Explore services</a>
+          <a class="btn ghost" href="#brands">See brands</a>
+        </div>
+      </div>
+      <div class="figure" style="min-height:320px">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1600&auto=format&fit=crop" alt="Bright workspace with analytics"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <h2>What customers say</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card quote">“Admissions cycle time dropped by 41% in the first month. Our clinicians finally spend time with patients, not paperwork.”<br/><br/><strong>COO, Multispecialty Hospital</strong></div>
+        <div class="card quote">“Room turnover accuracy improved, and guest CSAT is up 18%. The team loves the clarity of the workflows.”<br/><br/><strong>GM, 5‑Star Hotel</strong></div>
+        <div class="card quote">“We automated vendor onboarding and contracts. What took weeks now takes hours, with complete audit trails.”<br/><br/><strong>Head of Procurement, Enterprise</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Case studies</h2>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card"><h3>Hospital Network</h3><p>Unified patient journey; cut readmissions by 9%; reduced billing leakage by 15%.</p></div>
+        <div class="card"><h3>Luxury Hotel Group</h3><p>Digitized housekeeping & maintenance; SLA adherence 97%; CSAT +18%.</p></div>
+        <div class="card"><h3>Manufacturer</h3><p>Predictive maintenance & quality analytics reduced downtime by 22%.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="brands" style="background:#fff">
+    <div class="container">
+      <h2>Brands we work with</h2>
+      <div class="brands">
+        <img src="/mnt/data/75228f3e-0f63-4adb-a1a2-6a0c68cc3503.png" alt="Partner and customer brands"/>
+      </div>
+      <p class="lead" style="margin-top:8px">Logos are property of their respective owners and shown for illustrative purposes.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card" style="display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+           background:linear-gradient(90deg,#e0f2fe,#fef9c3)">
+        <p class="lead" style="margin:0">Ready to see it in action? Book a discovery call and we’ll tailor a blueprint to your KPIs.</p>
+        <div style="display:flex;gap:10px">
+          <a class="btn brand" href="contact.html">Talk to an expert</a>
+          <a class="btn ghost" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="wordmark">NORTHSKY</div>
+      <p class="lead">Automation & digitization for hospitals, hotels, manufacturing, and retail — with domain blueprints and human‑friendly AI.</p>
+    </div>
+    <div><h4>Company</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+    <div><h4>Solutions</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="industries.html#hospitals">Smart Hospitals</a></li><li><a href="industries.html#hotels">Smart Hotels</a></li><li><a href="industries.html#manufacturing">Manufacturing 4.0</a></li><li><a href="industries.html#retail">Connected Retail</a></li></ul></div>
+    <div><h4>Resources</h4><ul style="list-style:none;padding:0;margin:0"><li><a href="#">Docs</a></li><li><a href="#">Security</a></li><li><a href="#">Status</a></li></ul></div>
+  </div>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:var(--muted);font-size:13px">
+    <div>© 2025 NORTHSKY. All rights reserved.</div>
+    <div>Made with ❤️ in India</div>
+  </div>
+</footer>
+
+</body>
+</html>
